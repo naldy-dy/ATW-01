@@ -1,0 +1,93 @@
+body{
+font-family: calibri;
+background:#DCDCDC ;
+margin:15%;
+}
+
+.header-1{
+	font-size: 25px;
+	text-align: center;
+}
+.header-1 a{
+	margin-left: 20px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #23AEA9
+}
+.index p{
+	width: 50%;
+	text-align: justify;
+}
+
+.header-1 a:hover{
+	text-decoration: none;
+	transition: all 0.5s;
+	color: #fff
+}
+.about{
+	width: 50%;
+	text-align: justify;
+}
+
+button{
+	width: 60px;
+	height: 30px;
+	border-radius: 5px;
+	background: #36A992;
+	border:none;
+	color: #fff;
+	font-weight: bold;	
+}
+
+.btn{
+	width: 60px;
+	height: 30px;
+	border-radius: 2px;
+	background: #36A992;
+	border:none;
+	color: #fff;
+	font-weight: bold;	
+	text-decoration: none;
+}
+
+table{
+	width: 100%;
+	border:none;
+}
+
+thead{
+	background: #000000;
+	color: #fff;
+	line-height: 30px;
+	text-align: center;
+	font-family: calibri;
+}
+
+tbody{
+	background: #D2D1D1;
+	line-height: 30px;
+	text-align: center;
+	font-family: calibri;
+}
+.row{
+	width: 100%
+}
+.kiri{
+	float: left;
+	width:50%;
+}
+.kanan{
+	float: right;
+	width:40%;
+}
+
+input{
+	width: 100%;
+	height: 30px;
+	border-radius: 5px;
+	border:2px solid #36A992
+}
+
+strong{
+	padding-bottom: 5px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/assets/style.css">
+	<title>Home</title>
+</head>
+<body>
+	<%- include('../components/header')%>
+	<div class="index">
+			<div class="container">
+		<div class="row">
+				<div class="col-md-6">
+					<h1 class="pt-5">Detail User</h1>
+						<div class="text-center">
+						</div>
+
+
+					</div>
+
+					<!-- Form Tambah User -->
+					<div class="col-md-6 shadow mt-5 pb-5" style="padding-left: 50px">
+						<h1 class="pt-5">Tambah Data</h1>
+							<form action="/users" method="post">
+								<div class="form-group">
+									<div class="container">
+										<strong>Nama</strong>
+										<input type="text" class="form-control" name="name">
+
+										<strong>Email</strong>
+										<input type="text" class="form-control" name="email">
+
+										<button class="btn btn-dark" style="margin-top: 10px; float: right;">SAVE</button>
+									</div>
+								</div>
+							</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

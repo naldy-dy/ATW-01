@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/assets/style.css">
+	<title>Home</title>
+</head>
+<body>
+	<%- include('../components/header')%>
+	<div class="index">
+			<div class="container">
+		<div class="row">
+				<div class="kiri">
+					<div class="card-header">
+						<h1 class="PT-3">Data User</h1>
+						<strong>Jumlah Anggota = <%= users.length%> Orang</strong>
+					</div>
+							<div style="overflow-y: scroll; height: 300px">
+							<table class="table col-md-6">
+								<thead class="bg-dark text-white">
+									<td>No</td>
+									<td>Nama</td>
+									<td>Email</td>
+									<td>Aksi</td>
+								</thead>
+								<tbody>
+									<% if(users.length >0) { %>
+									<% users.forEach(function(user){ %>
+										<tr>
+											<td>#</td>
+											<td><%= user.name.toUpperCase() %></td>
+											<td><%= user.email.toUpperCase()%></td>
+											<td>
+												<a href="/users/<%= user.id %>" class="btn btn-sm btn-success">Detail</a>
+												<a href="" class="btn btn-sm btn-danger">Hapus</a>
+											</td>
+										</tr>
+									<% }); %>
+										<% } else{ %>
+											<td>Data Kosong</td>
+											<% } %>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+
+					<div class="kanan shadow mt-5 pb-5" style="padding-left: 50px">
+						<h1 class="pt-5">Tambah Data</h1>
+							<form action="/users" method="post">
+								<div class="form-group">
+									<div class="container">
+										<strong>Nama</strong>
+										<input type="text" class="form-control" name="name">
+
+										<strong>Email</strong>
+										<input type="text" class="form-control" name="email">
+
+										<button class="btn btn-dark" style="margin-top: 10px; float: right;">SAVE</button>
+									</div>
+								</div>
+							</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
